@@ -1,0 +1,50 @@
+:root{
+  --color: blue;
+  --spacing: 50px;
+  --blur: 15px;
+}
+
+html {
+  background: #bada55
+}
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+.text{
+  line-height: 150px;
+  font-size: 2rem;
+  text-align: center;
+}
+.color {
+  color: var(--color);
+}
+.options {
+  position: relative;
+  padding-left: 25px;
+  width: 550px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  font-size: 1.5rem;
+  gap: 15px;
+}
+.cover{
+  width: 600px;
+  height: 400px;
+  background: var(--color); 
+  box-sizing: border-box; 
+  overflow: hidden;
+}
+.img { 
+  position: relative;
+  top: var(--spacing);
+  left: var(--spacing);
+  width: 500px;
+  height: 300px;
+  background: url(./background.jpg);
+  filter: blur(var(--blur))
+}
